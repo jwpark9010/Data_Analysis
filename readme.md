@@ -22,8 +22,3 @@ and so on...
   - 2..
     - 3.
 
-
-
-djdajkcia
-
-dk,sakcasksc<br>dwsdadasds

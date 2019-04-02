@@ -15,7 +15,6 @@ This repo is test
 python
 pandas
 matplot
-and so on...
 </pre>
 
 - 1..

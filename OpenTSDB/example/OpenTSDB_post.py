@@ -6,7 +6,7 @@ from collections import OrderedDict
 import csv
 import pandas as pd
 
-url ="http://125.140.110.217:64242/api/put"
+url ="__"
 headers = {'content-type'   :   'application/json'}
 
 ''' 

@@ -66,7 +66,7 @@ def Query(_session, _url, _queries, _tags):
 
 if __name__ == "__main__":
     
-    url ="http://125.140.110.217:64242/api/query"
+    url ="__"
     
     with requests.Session() as s:
     

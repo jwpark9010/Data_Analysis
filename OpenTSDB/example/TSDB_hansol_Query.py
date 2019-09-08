@@ -6,7 +6,8 @@ from collections import OrderedDict
 import pprint
 import pandas as pd
 import numpy as np
-import seaborn as sb
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 query_params = {
         "start" : "2018-09-23 00:00:00",
@@ -87,7 +88,13 @@ def make_dataframe(query_data):
     print(df.head())
 
     return df
+    
+def draw_graph(_df):
+    _df = _df[:5000] # seaborn 그래프에서 나타낼수있는 범위내로 짜르기(max range는 ram의 성능에 따라 달라짐)
 
+    sns.pairplot(_df, vars=['PULP_TMPT_M', 'WP_IN_M'], dropna=True)
+    # seaborn 그래프 참조 : https://datascienceschool.net/view-notebook/4c2d5ff1caab4b21a708cc662137bc65/
+    plt.show()
 
 if __name__ == "__main__":
         
@@ -99,8 +106,9 @@ if __name__ == "__main__":
     
     Query_data = result_queryData.json()
     
-    make_dataframe(Query_data)
-   
+    df = make_dataframe(Query_data)
+    
+
     
 
     
